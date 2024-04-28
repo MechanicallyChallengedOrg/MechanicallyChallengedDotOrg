@@ -1,12 +1,35 @@
+:root
+{
+    --bg-color: white;
+    --page-color: aliceblue;
+    --text-color: black;
+    --link-color: blue;
+    --border-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root
+    {
+        --bg-color: #0e1c26;
+        --page-color: black;
+        --text-color: white;
+        --link-color: antiquewhite;
+        --border-color: #444;
+    }
+}
 html {
     padding: 0;
 }
 
 body {
-    background-color: aliceblue;
+    background-color: var(--page-color);
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25em;
+}
+
+.content a {
+    color: var(--link-color);
 }
 
 #page {
@@ -19,9 +42,11 @@ body {
 }
 
 .content {
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);;
     border-radius: 1em;
+    padding-bottom: 1em;
 }
 
 .row {
@@ -41,7 +66,7 @@ body {
 .example
 {
     border-radius: 1em;
-    border: 3px solid black;
+    border: 3px solid var(--border-color);
 }
 
 .wrap-left
@@ -49,4 +74,23 @@ body {
     float:left;
     margin-right: 1em;
     margin-bottom: 1em;
+}
+
+.wrap-right
+{
+    float:right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.discord-split
+{
+    text-align: center;
+    flex-grow: 1;
+}
+
+.discord-split iframe
+{
+    width: 350px;
+    height: 250px; 
 }
