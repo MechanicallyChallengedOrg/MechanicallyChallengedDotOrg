@@ -49,6 +49,12 @@ body {
     padding: 1em 0;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+}
+
 .row {
     display: flex;
 }
