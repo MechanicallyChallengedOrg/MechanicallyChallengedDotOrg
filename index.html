@@ -1,104 +1,184 @@
 <html>
 
 <head>
-    <title>Mechanically Challenged</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Mechanically Challenged</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="page">
-        <div class="content">
-            <div class="section row">
-                <div class="video">
-                    <iframe width="100%" height="540"
-                        src="https://www.youtube.com/embed/ZeMQJdvAL_M?si=Qi0BVuntQ525bLJn" title="YouTube video player"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+  <div id="page">
+    <div class="content">
+
+      <!-- <div class="section row">
+        <div class="video">
+          <iframe width="100%" height="540" src="https://www.youtube.com/embed/ZeMQJdvAL_M?si=Qi0BVuntQ525bLJn"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
+            allowfullscreen></iframe>
 
-                </div>
-            </div>
-            <div class="section row">
-                <div>
-                    <img class="small-width wrap-left" src="imgs/logo.png">
-                    <h1>Mechanically Challenged</h1>
-                    <p>
-                        Mechanically Challenged is a monthly challenge hosted by
-                        MooNiZZ and Captain Coder's Academy in which members of
-                        the community recreate different mechanics found in
-                        games! The goal is to create a library of references and
-                        examples for these mechanics in as many different
-                        engines and languages as possible.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section row">
-                <div>
-                    <h2>April 2024 - Dropping Through Platforms</h2>
-                    <div>
-                        <img class="small-width example wrap-left" src="imgs/drop-through-example.gif">
-                        <div>
-                            <p>
-                                This month's mechanic is... <b>Dropping through platforms</b>!
-                            </p>
-                            <p>
-                                This is a very common mechanic in 2D Platformers
-                                where you can stand on a platform, hold down, and
-                                press jump to drop through the platform you're
-                                standing on. Typically, from beneath the platform,
-                                it is also possible to jump through the platform and
-                                land on it.
-                            </p>
-                            <h2>Prizes</h2>
-                            <p>
-                                Entries submitted before <b>May 1st 2024</b> will be
-                                eligible for an <b>Educational Mechanic</b> prize!
-                            </p>
-                            <p>
-                                Two $50 <b>Educational Mechanic</b> prizes will be
-                                awarded: one by Captain Coder and one by MooNiZZ.
-                                The selection process is at the sole discretion of
-                                the judge. The judges will be looking for clean
-                                implementations that can be utilized by new
-                                developers to implement the mechanic.
-                            </p>
-
-                            <h2>How to Participate</h2>
-                            <p>
-                                Full instructions for submitting an entry and rules for eligibility can be found on
-                                GitHub:
-                                <a href="https://github.com/MooNiZZ/MechanicallyChallenged?tab=readme-ov-file#how-to-participate"
-                                    target="_about">LINK</a>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section row">
-                <div style="width:100%">
-                    <h2>Community</h2>
-                    <p>Join us on Discord and Twitch to ask questions, chat, and hangout with the community:</p>
-                    <div class="row evenly-spaced">
-                        <div class="discord-split">
-                            <p>MooNiZZ on <a href="https://www.twitch.tv/moonizz" target="_blank">Twitch</a></p>
-                            <iframe src="https://discord.com/widget?id=202858696923938816&theme=dark"
-                                allowtransparency="true" frameborder="0"
-                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-                        </div>
-                        <div class="discord-split">
-                            <p>CaptainCoder's Academy on <a href="https://www.twitch.tv/thecaptaincoder"
-                                    target="_blank">Twitch</a></p>
-                            <iframe src="https://discord.com/widget?id=982290855215906897&theme=dark"
-                                allowtransparency="true" frameborder="0"
-                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+      </div> -->
+
+      <div class="section row">
+        <div>
+          <img class="small-width wrap-left" src="imgs/logo.png">
+          <h1>Mechanically Challenged</h1>
+          <p>
+            Mechanically Challenged is a monthly challenge hosted by MooNiZZ and
+            Captain Coder's Academy in which members of the community recreate
+            different mechanics found in games! The goal is to create a library
+            of references and examples for these mechanics in as many different
+            engines and languages as possible.
+          </p>
+        </div>
+      </div>
+
+      <div class="section row">
+        <div>
+          <h2>May 2024 - Special Platforms: Slopes and Loops</h2>
+          <div class="row">
+            <div class="column wrap-left">
+              <img class="small-width example" src="imgs/sonic-sloped-platform.gif">
+              <img class="small-width example" src="imgs/sonic-success-loop.gif">
+              <img class="small-width example" src="imgs/sonic-fail-loop.gif">
+            </div>
+            <div>
+              <p>
+                This month's mechanic is... <b>Special Platforms: Slopes and Loops</b>!
+              </p>
+              <p>
+                The Sonic series made great use of special platforms to create
+                twisting, winding, and fast paced levels! This included sloped
+                platforms that allowed the player to accelerate while moving
+                down and fight gravity while moving upward. Probably more
+                iconic are the loops that Sonic uses to create a sense of
+                movement and speed!
+              </p>
+
+              <p>
+                This month, you are challenged to write an implementation for
+                sloped platforms, looping platforms, or both! A few things to
+                notice from the examples:
+              </p>
+              <p>
+              <ul>
+                <li>
+                  The character sprite adjust to the angle of the slope
+                </li>
+                <li>
+                  The character's velocity is affected by the slope: they slow
+                  down going up and speed up moving down.
+                </li>
+                <li>
+                  The character will slide down a slope that is too steep.
+                </li>
+                <li>
+                  The character cannot make it through a loop if their
+                  velocity is not great enough
+                </li>
+              </ul>
+              </p>
+
+              <p>
+                Both 2D and 3D submissions are welcome! Additionally, it is up
+                to you how you choose to implement this mechanic. However,
+                entries that focus on simplicity, modularity, and code reuse
+                are more likely to win an <b>Educational Mechanic</b> prize!
+              </p>
+              <h2>Prizes</h2>
+              <p>
+                Entries submitted before <b>June 1st 2024</b> will be eligible
+                for an <b>Educational Mechanic</b> prize!
+              </p>
+              <p>
+                Two $50 <b>Educational Mechanic</b> prizes will be awarded:
+                one by Captain Coder and one by MooNiZZ. The selection process
+                is at the sole discretion of the judge. The judges will be
+                looking for clean implementations that can be utilized by new
+                developers to implement the mechanic.
+              </p>
+
+              <h2>How to Participate</h2>
+              <p>
+                Full instructions for submitting an entry and rules for
+                eligibility can be found on GitHub:
+                <a href="https://github.com/MechanicallyChallengedOrg/SlopesAndLoops" target="_about">LINK</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section row">
+        <div style="width:100%">
+          <h2>Community</h2>
+          <p>Join us on Discord and Twitch to ask questions, chat, and hangout with the community:</p>
+          <div class="row evenly-spaced">
+            <div class="discord-split">
+              <p>MooNiZZ on <a href="https://www.twitch.tv/moonizz" target="_blank">Twitch</a></p>
+              <iframe src="https://discord.com/widget?id=202858696923938816&theme=dark" allowtransparency="true"
+                frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+            <div class="discord-split">
+              <p>CaptainCoder's Academy on <a href="https://www.twitch.tv/thecaptaincoder" target="_blank">Twitch</a>
+              </p>
+              <iframe src="https://discord.com/widget?id=982290855215906897&theme=dark" allowtransparency="true"
+                frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section row">
+        <h1>Previous Challenges</h1>
+      </div>
+
+      <div class="section row">
+        <div>
+          <h2>April 2024 - Dropping Through Platforms</h2>
+          <div>
+            <img class="small-width example wrap-left" src="imgs/drop-through-example.gif">
+            <div>
+              <p>
+                This month's mechanic is... <b>Dropping through platforms</b>!
+              </p>
+              <p>
+                This is a very common mechanic in 2D Platformers where you can
+                stand on a platform, hold down, and press jump to drop through
+                the platform you're standing on. Typically, from beneath the
+                platform, it is also possible to jump through the platform and
+                land on it.
+              </p>
+              <h2>Prizes</h2>
+              <p>
+                Entries submitted before <b>May 1st 2024</b> will be eligible
+                for an <b>Educational Mechanic</b> prize!
+              </p>
+              <p>
+                Two $50 <b>Educational Mechanic</b> prizes will be awarded: one
+                by Captain Coder and one by MooNiZZ. The selection process is at
+                the sole discretion of the judge. The judges will be looking for
+                clean implementations that can be utilized by new developers to
+                implement the mechanic.
+              </p>
+
+              <h2>How to Participate</h2>
+              <p>
+                Full instructions for submitting an entry and rules for eligibility can be found on
+                GitHub:
+                <a href="https://github.com/MooNiZZ/MechanicallyChallenged?tab=readme-ov-file#how-to-participate"
+                  target="_about">LINK</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </body>
 
 </html>
