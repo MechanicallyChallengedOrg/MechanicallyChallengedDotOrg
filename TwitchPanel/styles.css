@@ -1,0 +1,58 @@
+:root
+{
+    --bg-color: white;
+    --page-color: aliceblue;
+    --text-color: black;
+    --link-color: blue;
+    --border-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root
+    {
+        --bg-color: #0e1c26;
+        --page-color: black;
+        --text-color: white;
+        --link-color: antiquewhite;
+        --border-color: #444;
+    }
+}
+
+p {
+    margin: .25em;
+}
+
+#content {
+    overflow: hidden;
+    color: var(--text-color);
+    width: 300px;
+}
+
+a {
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    display: block;
+}
+
+.join-button {
+    background-color: #231f20;
+    margin: .25em;
+    padding: .25em;
+    text-align: center;
+    border-radius: .5em;
+    border: 3px solid #7e7e7e;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-container {
+    max-height: 175px;
+    border-radius: .5em;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
