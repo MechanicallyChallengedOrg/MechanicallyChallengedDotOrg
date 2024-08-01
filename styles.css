@@ -143,3 +143,10 @@ body {
     border-radius: 1em;
     box-shadow: .1em .1em .5em black;
 }
+
+.challenger-avatar img
+{
+    width: 100px;
+    margin: 1em;
+    border-radius: 5em;
+}
